@@ -9,15 +9,39 @@
         <link href="style.css" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         
-       <link rel="preconnect" href="https://fonts.googleapis.com">
-       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
         
         <style>
-            /* CSS */
+            /* CSS for fonts and font sizes */
             a{
                 font-family: 'Oswald';
             }
+            
+            h1,h2,h3,h4 {
+                font-family: 'Oswald';
+                font-size: 40px;
+            }
+            
+            p, .links {
+                font-family:'Titillium Web';
+                font-size: 25px;
+            }
+            
+            #color, #possible, .accordion-body, .pick-a-color, h4{
+                text-align: center;
+            }
+            
+            .future{
+                font-size: 25px;
+            }
+            
+            li {
+                font-family: 'Titillium Web';
+                font-size: 19px;
+            }
+            
         </style>
         
         <title>Technology & Mental Health</title>
@@ -81,13 +105,13 @@
                 
                 <div class="row">
                     
-                    <div class="col-12 col-xl-6">
-                        <h2 id="pick-a-color"> Before we move along, how about you pick a color you like for the background!</h2>
-                        <p> Either use hex numbers or the name of a color. (No capital letters or spaces!) </p>
+                    <div class="col-12 col-xl-8">
+                        <h2 class="pick-a-color"> Before we move along, how about you pick a comforting color for the background</h2>
+                        <p class="pick-a-color"> Either use hex numbers or the name of a color. (No capital letters or spaces!) </p>
                     </div> <!--/col-->
             
                 
-                    <div class="col-12 col-xl-6">
+                    <div class="col-12 col-xl-4">
                      <input type="text">
                      <button id="color">Submit</button>
                     </div> <!--/col-->
@@ -168,9 +192,10 @@
                         </div>
                         
                         <div class="row"> 
-                            <div class="col-6">
+                            <div class="col">
                                  <h4>Focusing & Better Sleep</h4>
                             </div>
+                        </div>
                         
                        <div class="row gx-0">
                         <div class="col-12 col-xl-6">
@@ -211,12 +236,12 @@
                 </div>
                 
                 <div class="row">
-                    <div class="col">
-                        <p>A small device that attaches to the body that can help control emotions, similar to the Feelzing patch which already exists but with different versions to help with multiple things. One version of this device when activated can help to stop a panic attack by calming the user. Another version of this device when activated could help stimulate positive emotions when the user is feeling down. This device could be triggered by tapping the device a certain number of times or by via a small switch.</p>
+                    <div class="col-12">
+                        <p class="future">A small device that attaches to the body that can help control emotions, similar to the Feelzing patch which already exists but with different versions to help with multiple things. One version of this device when activated can help to stop a panic attack by calming the user. Another version of this device when activated could help stimulate positive emotions when the user is feeling down. This device could be triggered by tapping the device a certain number of times or by via a small switch.</p></li>
                     </div> <!--/col-->
                     
-                    <div class="col">
-                        <p>Another device is similar to the feel wristband but with more. An earbud that you attach to your ear that can track mood using temperature, pulse tracking ect. The earbud will have a learning AI that will give advice based on the pattern of emotions the user is feeling. Through an app on the user’s phone the user will be able to give feedback. Things such as accuracy, helpfulness, and user’s events throughout the day can all be recorded as feedback.This feedback will be sent to the AI to better personalize the user’s experience. The application will be specifically made for this device and using the app the user can connect the application and device using a bluetooth connection. Through this app while connected to the device you will be able to adjust the settings, submit feedback, and much more. For the function of giving advice, the settings for this will have three options:</p>
+                    <div class="col-12">
+                        <p class="future">Another device is similar to the feel wristband but with more. An earbud that you attach to your ear that can track mood using temperature, pulse tracking ect. The earbud will have a learning AI that will give advice based on the pattern of emotions the user is feeling. Through an app on the user’s phone the user will be able to give feedback. Things such as accuracy, helpfulness, and user’s events throughout the day can all be recorded as feedback.This feedback will be sent to the AI to better personalize the user’s experience. The application will be specifically made for this device and using the app the user can connect the application and device using a bluetooth connection. Through this app while connected to the device you will be able to adjust the settings, submit feedback, and much more. For the function of giving advice, the settings for this will have three options:</p></li>
                         <ul>
                             <li>Give advice especially when strong negative emotions are detected (the AI will assume the user might be having a panic attack).</li>
                             <li>Give advice only when the earbud is tapped 3 times in a row.</li>
@@ -240,7 +265,7 @@
             <div class="container">
                 
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-12">
                         <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
@@ -250,13 +275,11 @@
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <ul>
                                             <!-- Remember to make these into links!-->
-                                            <li><a href="https://www.happify.com/">https://www.happify.com/</a></li>
-                                            <li><a href="https://www.headspace.com/">https://www.headspace.com/</a></li>
-                                            <li><a href="https://www.beatingtheblues.co.uk/">https://www.beatingtheblues.co.uk</a></li>
-                                            <li><a href="https://www.makeuseof.com/gadgets-for-improving-mental-health/">https://www.makeuseof.com/gadgets-for-improving-mental-health/</a></li>
-                                        </ul>
+                                            <li class="links"><a href="https://www.happify.com/">https://www.happify.com/</a></li>
+                                            <li class="links"><a href="https://www.headspace.com/">https://www.headspace.com/</a></li>
+                                            <li class="links"><a href="https://www.beatingtheblues.co.uk/">https://www.beatingtheblues.co.uk</a></li>
+                                            <li class="links"><a href="https://www.makeuseof.com/gadgets-for-improving-mental-health/">https://www.makeuseof.com/gadgets-for-improving-mental-health/</a></li>
                                     </div>
                                 </div>
                             </div> <!--/accordion-item-->
